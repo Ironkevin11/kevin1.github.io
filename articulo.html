@@ -1,0 +1,152 @@
+<html lang="es">
+<head>
+    <meta name="viewport" content="with=device-width, initial.scale=1.0">
+
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="author" content="Garzon Jaimes Kevin">
+    <meta name="description" content="Pagina sobre normativas, correspondiente a la asignatura de Concepto de Redes Y Comunicaciones">
+    <meta name="keywords" content="Sistemas Operativos, Microprocesadores, Ingenieria, Sistemas, unicoc">
+    <title>Glosario Sistemas Operativos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body bgcolor="">
+
+    <CENTER>
+<header>
+    <img src="imagenes/logo_unicoc_1.png" height="200" width="550">
+    <h1><i><font face="Times new roman" color="red" >Niveles de jerarquia de protocolos</font></i></h1>
+    <nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Glosario.html">Glosario</a></li>
+        <li><a href="normativas.html">Normativas</a></li>
+        <li><a href="articulo.html">Articulo Web</a></li>
+        <li><a href="misestudios.html">Mis Estudios</a></li>
+        <li><a href="miexperiencia.html">Mi Experiencia</a></li>
+        <li><a id="contacto" ; href="Contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+    <br><hr>
+</header>
+
+<h2><i>Modelo OSI</h2></i>
+
+<hr size="10" color="#0D0D0D">
+    <marquee behavior="alternate" style="border:#7c7979 3px SOLID"><font face="Arial" color="black" >Capa Física (Physical Layer)</font></marquee>
+<hr size="10" color="#0D0D0D">
+
+    <p><font color="black" size="3" face="times new roman">
+        La Capa Física del modelo OSI constituye el nivel más básico de la arquitectura, encargándose de la transmisión física de bits a través de medios de comunicación como cables de cobre, 
+        fibra óptica o señales de radio. Sus responsabilidades incluyen la definición de las características eléctricas, mecánicas y funcionales de los dispositivos de red, así como la especificación de la topología física. 
+        Además, se ocupa de la sincronización de la transmisión de bits entre los dispositivos conectados y la modulación de señales para facilitar la comunicación efectiva. 
+        En esencia, la Capa Física establece las bases para el transporte de datos, garantizando una conexión física robusta y confiable entre los nodos de la red.</font></p>
+        <h1><font color=red size=4>Protocolos</font></h1>
+        <p><font color="black" size="3" face="times new roman"><b>Ethernet:</b> Utilizado comúnmente en redes locales (LAN), Ethernet define los estándares para la transmisión de datos a través de cables de cobre.</font></p>
+        <p><font color="black" size="3" face="times new roman"><b>USB (Universal Serial Bus):</b> Aunque USB es conocido principalmente como un estándar para la conexión de dispositivos periféricos, también incluye especificaciones físicas para la conexión de cables y conectores.</font></p>
+        <p><font color="black" size="3" face="times new roman"><b>Fibra óptica:</b> No es un protocolo específico, pero la fibra óptica se utiliza en la Capa Física para transmitir datos a través de pulsos de luz. Los estándares asociados con la fibra óptica, como el estándar de Ethernet para fibra, están relacionados con la Capa Física.</font></p>
+
+        <br>
+        
+    <hr size="10" color="#0D0D0D">
+        <marquee behavior="alternate" style="border:#7c7979 3px SOLID"><font face="Arial" color="black" >Capa de Enlace de Datos (Data Link Layer)</font></marquee>
+    <hr size="10" color="#0D0D0D">
+
+        <p><font color="black" size="3" face="times new roman">
+            La Capa de Enlace de Datos, ubicada en el segundo nivel del modelo OSI, desempeña un papel crucial en la transmisión de datos entre nodos directamente conectados en una red.
+            Su función principal es garantizar una comunicación fiable y libre de errores en el enlace físico, dividiéndose en dos subcapas: Control de Acceso al Medio (MAC) y Control de Enlace Lógico (LLC). 
+            La subcapa MAC se ocupa de la asignación única de direcciones físicas (MAC addresses) a dispositivos de red para facilitar la identificación, mientras que la subcapa LLC se enfoca en el control de flujo y la corrección de errores. 
+            En conjunto, la Capa de Enlace de Datos supervisa la correcta transmisión de tramas de datos, coordina el acceso al medio compartido y proporciona la base esencial para la conectividad eficiente entre nodos adyacentes.</font></p>
+            <h3><font color="red" size="4">Protocolos</font></h3>
+            <p><font color="black" size="3" face="times new roman"><b>PPP(Point-to-Point Protocol):</b> Este protocolo se utiliza comúnmente para establecer conexiones punto a punto, como las que se encuentran en conexiones de módem discado y conexiones de línea dedicada. PPP gestiona la encapsulación de datos y proporciona la autenticación y el control de enlace.</font></p>
+            <p><font color="black" size="3" face="times new roman"><b>HDLC (High-Level Data Link Control):</b> HDLC es un protocolo de enlace de datos que se utiliza para la transmisión de datos sobre líneas seriales. Es un protocolo síncrono que define cómo los datos se encapsulan y transmiten en tramas. HDLC ha sido fundamental en el desarrollo de otros protocolos, como el PPP mencionado anteriormente.</font></p>
+            <p><font color="black" size="3" face="times new roman"><b>Ethernet:</b> Aunque también se mencionó anteriormente en relación con la Capa Física, Ethernet opera en la Capa de Enlace de Datos para gestionar la comunicación entre dispositivos en una red local (LAN). Define cómo los datos se encapsulan y transmiten en tramas a través de medios compartidos.</font></p>
+
+            <br>
+
+     <hr size="10" color="#0D0D0D">
+        <marquee behavior="alternate" style="border:#7c7979 3px SOLID"><font face="Arial" color="black" >Capa de Red (Network Layer)</font></marquee>
+    <hr size="10" color="#0D0D0D">
+
+            <p><font color="black" size="3" face="times new roman">
+                La Capa de Red, ubicada en el tercer nivel del modelo OSI, desempeña un papel esencial en el enrutamiento de datos a través de una red. 
+                Su función principal consiste en determinar la ruta más eficiente para enviar paquetes de datos desde el origen hasta el destino, teniendo en cuenta la topología de la red y las direcciones lógicas. 
+                Además, la Capa de Red es responsable de fragmentar y reensamblar los datos, así como de asignar direcciones lógicas únicas a los dispositivos mediante protocolos como el Protocolo de Internet (IP). 
+                Al utilizar enrutadores, esta capa facilita la comunicación entre diferentes redes y constituye un elemento fundamental para la interoperabilidad en el ámbito de las redes de computadoras.</font></p>
+            <h4><font color="red" size="4">Protocolos</font></h4>
+            <p><font color="black" size="3" face="times new roman"><b>OSPF (Open Shortest Path First):</b> OSPF es un protocolo de enrutamiento de estado de enlace utilizado en redes IP. Su función es determinar las rutas más eficientes entre routers, teniendo en cuenta factores como la velocidad del enlace y la congestión de la red. OSPF es especialmente común en redes empresariales y de proveedores de servicios.</font></p>
+            <p><font color="black" size="3" face="times new roman"><b>ICMP (Internet Control Message Protocol):</b> Aunque técnicamente es un subprotocolo de IP, ICMP opera en la Capa de Red y se utiliza para enviar mensajes de control y error entre dispositivos de red. Es esencial para diagnóstico de red, ya que incluye comandos como "ping" para verificar la conectividad.</font></p>
+            <p><font color="black" size="3" face="times new roman"><b>IP (Internet Protocol):</b> Este es quizás el protocolo más fundamental de la Capa de Red. IP se encarga de asignar direcciones lógicas únicas a los dispositivos en una red y facilita el enrutamiento de paquetes de datos entre redes distintas. IPv4 e IPv6 son dos versiones principales de este protocolo.</font></p>
+
+            <br>
+
+        <hr size="10" color="#0D0D0D">
+            <marquee behavior="alternate" style="border:#7c7979 3px SOLID"><font face="Arial" color="black" >Capa de Transporte (Transport Layer)</font></marquee>
+        <hr size="10" color="#0D0D0D">
+
+            <p><font color="black" size="3" face="times new roman">        
+                La Capa de Transporte, situada en el cuarto nivel del modelo OSI, es esencial para el transporte eficiente y confiable de datos entre aplicaciones en sistemas finales. 
+                Su función principal es proporcionar servicios de comunicación extremo a extremo, asegurando una entrega de datos sin errores, la segmentación y reensamblaje de mensajes, y la gestión del control de flujo. Esta capa utiliza dos protocolos principales, TCP (Protocolo de Control de Transmisión) para conexiones confiables y orientadas a la conexión, y UDP (Protocolo de Datagramas de Usuario) para conexiones no confiables y sin conexión, como las utilizadas en transmisiones de audio y video. 
+                Además, la Capa de Transporte juega un papel crucial en la corrección de errores, garantizando que los datos se entreguen correctamente y en el orden adecuado, proporcionando así una base sólida para las aplicaciones que operan en las capas superiores del modelo OSI.</font></p>
+            <h5><font color="red" size="4">Protocolos</font></h5>
+            <p><font color="black" size="3" face="times new roman"><b>UDP (Protocolo de Datagramas de Usuario):</b> A diferencia de TCP, UDP es un protocolo sin conexión y no confiable. Se utiliza cuando la velocidad de transmisión y la eficiencia son prioritarias sobre la garantía de entrega. Aplicaciones como transmisiones en tiempo real, videoconferencias y juegos en línea a menudo utilizan UDP.</font></p>
+            <p><font color="black" size="3" face="times new roman"><b>SCTP (Protocolo de Control de Transmisión Simplificado):</b> SCTP es un protocolo de transporte que combina características de TCP y UDP. Proporciona la entrega ordenada de datos y la corrección de errores, como TCP, pero también permite la transmisión de datos en paralelo, similar a UDP. SCTP es utilizado en algunas aplicaciones que requieren tanto la fiabilidad como la eficiencia de la transmisión simultánea de datos, como servicios de telefonía sobre IP y transmisión de video en tiempo real.</font></p>
+            <p><font color="black" size="3" face="times new roman"><b>TCP (Protocolo de Control de Transmisión):</b> TCP es un protocolo orientado a la conexión y confiable que proporciona una entrega de datos garantizada, la corrección de errores, y la reordenación de paquetes en caso de que lleguen fuera de secuencia. Es ampliamente utilizado para aplicaciones que requieren una transmisión de datos precisa y sin pérdidas, como la transferencia de archivos y la navegación web.</font></p>
+
+            <br>
+
+        <hr size="10" color="#0D0D0D">
+            <marquee behavior="alternate" style="border:#7c7979 3px SOLID"><font face="Arial" color="black" >Capa de Sesión (Session Layer)</font></marquee>
+        <hr size="10" color="#0D0D0D">
+
+            <p><font color="black" size="3" face="times new romam">
+                La Capa de Sesión, situada en el quinto nivel del modelo OSI, despliega un papel crucial en el establecimiento, gestión y finalización de sesiones entre aplicaciones en sistemas finales. 
+                Su función principal es facilitar la comunicación entre procesos de software en diferentes dispositivos, garantizando la sincronización y el control del diálogo entre ellos. 
+                La Capa de Sesión se ocupa de aspectos como la establecimiento, mantenimiento y cierre de conexiones, así como la gestión de la sincronización y la recuperación en caso de fallos. Además, proporciona servicios de diálogo, permitiendo que las aplicaciones se comuniquen de manera bidireccional o en grupos. 
+                Aunque algunas de sus funciones pueden ser asumidas por las capas superiores en ciertos modelos de red, la Capa de Sesión juega un papel fundamental en la creación y supervisión de sesiones que facilitan la transferencia de datos coherente y segura entre aplicaciones.</font></p>
+            <h6><font color="red" size="4">Protocolos (Esta capa no tiene protocolos en especifico como otras)</font></h6>
+            <p><font color="black" size="3" face="times new roman"><b>PPTP (Protocolo de túnel de punto a punto):</b> PPTP opera principalmente en la Capa de Enlace de Datos, pero también incluye funcionalidades de la Capa de Sesión. Se utiliza para establecer conexiones VPN (Redes Privadas Virtuales) y facilita la creación y el mantenimiento de sesiones seguras entre redes remotas.</font></p>
+            <p><font color="black" size="3" face="times new roman"><b>RPC (Remote Procedure Call):</b> Aunque RPC abarca varias capas del modelo OSI, incluyendo la Capa de Sesión, facilita la comunicación entre procesos en diferentes sistemas mediante llamadas a procedimientos remotos. RPC contribuye al establecimiento y gestión de sesiones entre aplicaciones distribuidas.</font></p>
+            <p><font color="black" size="3" face="times new roman"><b>NetBIOS (Sistema básico de entrada/salida de red):</b> Aunque NetBIOS opera en capas superiores, proporciona servicios de sesión que facilitan el establecimiento y el cierre de sesiones entre dispositivos en una red. Es comúnmente utilizado en redes Windows.</font></p>
+
+            <br>
+
+        <hr size="10" color="#0D0D0D">
+            <marquee behavior="alternate" style="border:#7c7979 3px SOLID"><font face="Arial" color="black" >Capa de Presentación (Presentation Layer)</font></marquee>
+        <hr size="10" color="#0D0D0D">
+
+            <p><font color="black" size="3" face="times new roman">
+                La Capa de Presentación, ubicada en el sexto nivel del modelo OSI, desempeña un papel esencial en la interoperabilidad de sistemas finales al garantizar que los datos sean presentados y entendidos de manera coherente entre aplicaciones. 
+                Esta capa se encarga de la traducción y conversión de formatos de datos, la compresión y descompresión, así como el cifrado y descifrado necesario para la seguridad de la comunicación. 
+                Al estandarizar la representación de datos, la Capa de Presentación facilita la comunicación entre sistemas con diferentes codificaciones y formatos. Además, realiza funciones de gestión de sesiones, como la sincronización y el control de diálogo, contribuyendo así a una transmisión eficiente y fiable de información entre aplicaciones en sistemas distribuidos.</font></p>
+            <h7><font color="red" size="4">Protocolos</font></h7>
+            <p><font color="black" size="3" face="times new roman"><b>ASCII (American Standard Code for Information Interchange):</b> Aunque más un conjunto de caracteres que un protocolo, ASCII es esencial en la representación de texto y caracteres en la Capa de Presentación. Define códigos numéricos para caracteres alfabéticos, numéricos y especiales utilizados en la comunicación de texto.</font></p>
+            <p><font color="black" size="3" face="times new roman"><b>JPEG (Joint Photographic Experts Group):</b> JPEG es un estándar de compresión de imágenes que afecta la forma en que las imágenes se presentan y transmiten. Aunque su implementación está más centrada en la compresión de datos, tiene implicaciones en cómo se representan y visualizan las imágenes.</font></p>
+            <p><font color="black" size="3" face="times new roman"><b>SSL/TLS (Secure Sockets Layer/Transport Layer Security):</b> Aunque a menudo se asocia con la Capa de Seguridad (que a veces se considera una subcapa de la Capa de Presentación), SSL y su sucesor TLS proporcionan cifrado y autenticación para la seguridad de la comunicación en capas superiores, incluyendo la presentación de datos de manera segura.</font></p>
+
+            <br>
+
+        <hr size="10" color="#0D0D0D">
+            <marquee behavior="alternate" style="border:#7c7979 3px SOLID"><font face="Arial" color="black" >Capa de Aplicación (Application Layer)</font></marquee>
+        <hr size="10" color="#0D0D0D">
+
+            <p><font color="black" size="3" face="times new roman">
+                La Capa de Aplicación, la última capa del modelo OSI, actúa como interfaz entre el usuario y la red, proporcionando servicios y funciones que son directamente accesibles a las aplicaciones y servicios de software. 
+                Su objetivo principal es permitir a las aplicaciones comunicarse a través de la red, brindando servicios específicos para necesidades como correo electrónico, transferencia de archivos, acceso a bases de datos y navegación web. 
+                Aunque no es una única entidad monolítica, abarca una amplia variedad de protocolos y servicios específicos de aplicación, como HTTP para la World Wide Web, SMTP para el correo electrónico, y FTP para la transferencia de archivos. 
+                La Capa de Aplicación juega un papel crucial en la creación de un entorno de red que satisface las diversas demandas de las aplicaciones y usuarios finales, facilitando la comunicación y el intercambio de información a través de sistemas distribuidos.</font></p>
+            <h8><font color="red" size="4">Protocolos</font></h8>
+            <p><font color="black" size="3" face="times new roman"><b>HTTP (Hypertext Transfer Protocol):</b> Utilizado para la transferencia de información en la World Wide Web, HTTP permite la comunicación entre clientes (navegadores web) y servidores. Es fundamental para la visualización de páginas web y la transmisión de datos en la internet.</font></p>
+            <p><font color="black" size="3" face="times new roman"><b>SMTP (Simple Mail Transfer Protocol):</b> Diseñado para el envío de correos electrónicos, SMTP facilita la transferencia de mensajes de correo electrónico entre servidores de correo. Es esencial para la comunicación por correo electrónico y se encarga de enviar mensajes a través de la red.</font></p>
+            <p><font color="black" size="3" face="times new roman"><b>FTP (File Transfer Protocol):</b> FTP es utilizado para la transferencia de archivos entre sistemas en una red. Permite a los usuarios cargar y descargar archivos desde y hacia servidores remotos. Es comúnmente utilizado para administrar y compartir archivos en entornos de red.</font></p>
+
+            <br>
+
+            <footer>
+                <div class="footer-text">
+                    <p>&copy; UNICOC  | Todos los derechos reservados | 2023 </p>
+                 </div>
+            
+            </footer>
+
+</body>
+</html>
